@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="header__full-menu menu">
+            <div class="logo">BOUNCY</div>
+            <ul class="menu__full-menu">
+                <li><a href="#" class="active">Hello</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Team</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <nav class="header__mobile-nav">
+            <div class="logo">BOUNCY</div>
+            <a href="#" class="header__open-menu" onclick="openMenu(event)">Меню</a>
+        </nav>
+        <div class="header__popup">
+            <div class="header__mobile-menu-close" onclick="openMenu(event)">
+                <svg width="16px">
+                    <use xlink:href="#close"></use>
+                </svg>
+            </div>
+            <ul class="header__mobile-menu">
+                <li><a href="#" class="header__mobile-menu-item active">Hello</a></li>
+                <li><a href="#" class="header__mobile-menu-item">About</a></li>
+                <li><a href="#" class="header__mobile-menu-item">Services</a></li>
+                <li><a href="#" class="header__mobile-menu-item">Portfolio</a></li>
+                <li><a href="#" class="header__mobile-menu-item">Team</a></li>
+                <li><a href="#" class="header__mobile-menu-item">Blog</a></li>
+                <li><a href="#" class="header__mobile-menu-item">Contact</a></li>
+            </ul>
+        </div>
+        <div class="header__content">
+            <h1 class="header__h1">We are code safe</h1>
+            <p class="header__p">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum</p>
+        </div>
+        <div class="header__arrow" onclick="slideDown(event)">
+            <svg width="20px">
+                <use xlink:href="#arrow-down"></use>
+            </svg>
+        </div>
+    </header>
+    <section class="bouncy-is">
+        <div class="promo bouncy-is__promo">
+            <h2 class="promo__h2">This is bouncy</h2>
+            <p class="promo__p">
+                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.
+            </p>
+            <div class="button">Read More</div>
+        </div>
+        <div class="bouncy-is__image">
+            <img src="src/images/IPAD.png" alt="ipad">
+        </div>
+    </section>
+    <section class="bouncy-details">
+        <div class="bouncy-details__container">
+            <div class="promo promo_centered">
+                <h2 class="promo__h2">Details about bouncy</h2>
+                <p class="promo__p">
+                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+                </p>
+                <div class="promo__icons">
+                    <div class="mint-icon">
+                        <svg width="24px">
+                            <use xlink:href="#heart"></use>
+                        </svg>
+                    </div>
+                    <div class="mint-icon">
+                        <svg width="24px">
+                            <use xlink:href="#mouse"></use>
+                        </svg>
+                    </div>
+                    <div class="mint-icon">
+                        <svg width="24px">
+                            <use xlink:href="#lamp-idea"></use>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="bouncy-details__creative-ideas creative-ideas">
+                <h2>Creative Ideas</h2>
+                <div class="creative-ideas__ideas">
+                    <p>At <strong>vero</strong> eos et accusamus et iusto odio dignissimos <b>ducimus</b> qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores</p>
+                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias <strong>excepturi</strong> sint occaecati cupiditate non provident, <b>similique</b> sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bouncy-featured">
+        <div class="promo promo_centered">
+            <h2 class="promo__h2">Featured projects</h2>
+            <p class="promo__p">
+                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+            </p>
+        </div>
+    </section>
+    <section class="bouncy-directions">
+        <div class="bouncy-directions__image">
+            <img src="src/images/vintage-1.png" alt="Our Directions: Vintage">
+        </div>
+        <div class="bouncy-directions__image">
+            <img src="src/images/vintage-2.png" alt="Our Directions: Vintage">
+        </div>
+        <div class="bouncy-directions__image">
+            <img src="src/images/vintage-3.png" alt="Our Directions: Vintage">
+        </div>
+    </section>
+    <section class="bouncy-to-action">
+        <div class="bouncy-to-action__container">
+            <div class="bouncy-to-action__content">
+                <p class="bouncy-to-action__p">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+                <a href="#" class="button bouncy-to-action__button">Submit Now</a>
+            </div>
+        </div>
+    </section>
+    <section class="bouncy-services">
+        <div class="bouncy-services__container">
+            <div class="promo promo_centered">
+                <h2 class="promo__h2">Our services</h2>
+                <p class="promo__p">
+                    At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+                </p>
+            </div>
+            <div class="bouncy-services__graphics">
+                <div class="graphic-design bouncy-services__graphic-design">
+                    <div class="graphic-design__icons">
+                        <div class="mint-icon">
+                            <svg width="24px">
+                                <use xlink:href="#tools"></use>
+                            </svg>
+                        </div>
+                        <div class="mint-icon mint-icon_active">
+                            <svg width="24px">
+                                <use xlink:href="#brush"></use>
+                            </svg>
+                        </div>
+                        <div class="mint-icon">
+                            <svg width="24px">
+                                <use xlink:href="#joystick"></use>
+                            </svg>
+                        </div>
+                        <div class="mint-icon">
+                            <svg width="24px">
+                                <use xlink:href="#plug"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="graphic-design__content">
+                        <h2>Graphic Design</h2>
+                        <p class="graphic-design__p">At vero eos et accusamus et <strong>iusto</strong> odio dignissimos <b>ducimus</b> qui blanditiis praesentium voluptatum deleniti</p>
+                        <p class="graphic-design__p">quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, <strong>similique sunt</strong> in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
+                    </div>
+                </div>
+                <div class="bouncy-services__directions">
+                    <div class="bouncy-services__direction">
+                        <div class="percent-roll">
+                            <svg class="percent-roll__svg">
+                                <use xlink:href="#rolling-80"></use>
+                            </svg>
+                            <div class="percent-roll__percent">80%</div>
+                        </div>
+                        Branding
+                    </div>
+                    <div class="bouncy-services__direction">
+                        <div class="percent-roll">
+                            <svg class="percent-roll__svg">
+                                <use xlink:href="#rolling-75"></use>
+                            </svg>
+                            <div class="percent-roll__percent">75%</div>
+                        </div>
+                        Web Design
+                    </div>
+                    <div class="bouncy-services__direction">
+                        <div class="percent-roll">
+                            <svg class="percent-roll__svg">
+                                <use xlink:href="#rolling-60"></use>
+                            </svg>
+                            <div class="percent-roll__percent">60%</div>
+                        </div>
+                        UI/UX
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bouncy-impression">
+        <div class="bouncy-impression__container">
+            <div class="bouncy-impression__content promo">
+                <h2 class="bouncy-impression__h2 promo__h2">Impressed ?</h2>
+                <p class="bouncy-impression__promo promo__p">
+                        At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias
+                </p>
+                <p class="bouncy-impression__p">
+                    - <b>Abdullah Noman</b><br />
+                    Creatice Director, <strong>Code Cafe</strong>
+                </p>
+            </div>
+            <img src="src/images/screen.png" alt="Bouncy">
+        </div>
+    </section>
+    <section class="bouncy-portfolio">
+        <div class="bouncy-portfolio__container">
+            <div class="promo promo_centered">
+                <h2 class="promo__h2">The portfolio</h2>
+                <p class="promo__p">
+                    At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+                </p>
+            </div>
+            <ul class="bouncy-portfolio__menu section-menu">
+                <li class="section-menu__item section-menu__item_active">All Works</li>
+                <li class="section-menu__item">Print</li>
+                <li class="section-menu__item">Identity</li>
+                <li class="section-menu__item">Branding</li>
+                <li class="section-menu__item">Web</li>
+                <li class="section-menu__item">HTML</li>
+                <li class="section-menu__item">Wordpress</li>
+            </ul>
+            <div class="bouncy-portfolio__gallery bouncy-gallery">
+                <div class="bouncy-gallery__item">
+                    <img src="src/images/gallery/l86.png" alt="" />
+                </div>
+                <div class="bouncy-gallery__item">
+                    <img src="src/images/gallery/l90.png" alt="" />
+                </div>
+                <div class="bouncy-gallery__item">
+                    <img src="src/images/gallery/l92.png" alt="" />
+                </div>
+                <div class="bouncy-gallery__item">
+                    <img src="src/images/gallery/l87.png" alt="" />
+                </div>
+                <div class="bouncy-gallery__item">
+                    <img src="src/images/gallery/l95.png" alt="" />
+                </div>
+                <div class="bouncy-gallery__item">
+                    <img src="src/images/gallery/l96.png" alt="" />
+                </div>
+                <div class="bouncy-gallery__item">
+                    <img src="src/images/gallery/l91.png" alt="" />
+                </div>
+                <div class="bouncy-gallery__item">
+                    <img src="src/images/gallery/l89.png" alt="" />
+                </div>
+                <div class="bouncy-gallery__item">
+                    <img src="src/images/gallery/l94.png" alt="" />
+                </div>
+                <div class="bouncy-gallery__item">
+                    <img src="src/images/gallery/l88.png" alt="" />
+                </div>
+                <div class="bouncy-gallery__item">
+                    <img src="src/images/gallery/l93.png" alt="" />
+                </div>
+                <div class="bouncy-gallery__item">
+                    <img src="src/images/gallery/l97.png" alt="" />
+                </div>
+            </div>
+            <div class="bouncy-portfolio__to-action call-to-action">
+                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+                <div class="button call-to-action__button">Start Project</div>
+            </div>
+        </div>
+    </section>
+    <section class="bouncy-team">
+        <div class="promo promo_centered">
+            <h2 class="promo__h2">The team</h2>
+            <p class="promo__p">
+                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+            </p>
+        </div>
+        <div class="bouncy-team__profile">
+            <div class="axialslider">
+                <div class="axialslider__slides">
+                    <div class="axialslider__slide">
+                        <div class="profile">
+                            <div class="profile__avatar">
+                                <img src="src/images/avatar.png" alt="Avatar">
+                            </div>
+                            <div class="profile__content">
+                                <div class="profile__base">
+                                    <h2 class="profile__name">Abdullah Noman</h2>
+                                    <div class="profile__position">
+                                        Creative director, code cafe
+                                    </div>
+                                </div>
+                                <div class="profile__description">
+                                    At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+                                </div>
+                                <div class="profile__skills">
+                                    <div class="skill">
+                                        <div class="skill__content">
+                                            <div class="skill__name">Branding</div>
+                                            <div class="skill__percent">80%</div>
+                                        </div>
+                                        <div class="skill__line">
+                                            <div class="skill__fill" style="width: 80%;"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skill">
+                                        <div class="skill__content">
+                                            <div class="skill__name">Web Design</div>
+                                            <div class="skill__percent">65%</div>
+                                        </div>
+                                        <div class="skill__line">
+                                            <div class="skill__fill" style="width: 65%;"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skill">
+                                        <div class="skill__content">
+                                            <div class="skill__name">User interface</div>
+                                            <div class="skill__percent">75%</div>
+                                        </div>
+                                        <div class="skill__line">
+                                            <div class="skill__fill" style="width: 75%;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="axialslider__slide">
+                        <div class="profile">
+                            <div class="profile__avatar">
+                                <img src="src/images/avatar.png" alt="Avatar">
+                            </div>
+                            <div class="profile__content">
+                                <div class="profile__base">
+                                    <h2 class="profile__name">Abdullah Noman</h2>
+                                    <div class="profile__position">
+                                        Creative director, code cafe
+                                    </div>
+                                </div>
+                                <div class="profile__description">
+                                    At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+                                </div>
+                                <div class="profile__skills">
+                                    <div class="skill">
+                                        <div class="skill__content">
+                                            <div class="skill__name">Branding</div>
+                                            <div class="skill__percent">80%</div>
+                                        </div>
+                                        <div class="skill__line">
+                                            <div class="skill__fill" style="width: 80%;"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skill">
+                                        <div class="skill__content">
+                                            <div class="skill__name">Web Design</div>
+                                            <div class="skill__percent">65%</div>
+                                        </div>
+                                        <div class="skill__line">
+                                            <div class="skill__fill" style="width: 65%;"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skill">
+                                        <div class="skill__content">
+                                            <div class="skill__name">User interface</div>
+                                            <div class="skill__percent">75%</div>
+                                        </div>
+                                        <div class="skill__line">
+                                            <div class="skill__fill" style="width: 75%;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="axialslider__slide">
+                        <div class="profile">
+                            <div class="profile__avatar">
+                                <img src="src/images/avatar.png" alt="Avatar">
+                            </div>
+                            <div class="profile__content">
+                                <div class="profile__base">
+                                    <h2 class="profile__name">Abdullah Noman</h2>
+                                    <div class="profile__position">
+                                        Creative director, code cafe
+                                    </div>
+                                </div>
+                                <div class="profile__description">
+                                    At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+                                </div>
+                                <div class="profile__skills">
+                                    <div class="skill">
+                                        <div class="skill__content">
+                                            <div class="skill__name">Branding</div>
+                                            <div class="skill__percent">80%</div>
+                                        </div>
+                                        <div class="skill__line">
+                                            <div class="skill__fill" style="width: 80%;"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skill">
+                                        <div class="skill__content">
+                                            <div class="skill__name">Web Design</div>
+                                            <div class="skill__percent">65%</div>
+                                        </div>
+                                        <div class="skill__line">
+                                            <div class="skill__fill" style="width: 65%;"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skill">
+                                        <div class="skill__content">
+                                            <div class="skill__name">User interface</div>
+                                            <div class="skill__percent">75%</div>
+                                        </div>
+                                        <div class="skill__line">
+                                            <div class="skill__fill" style="width: 75%;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="call-to-action contact-us">
+        <p>Already Loved Us? Let’s talk!</p>
+        <div class="button call-to-action__button">Contact Us</div>
+    </section>
+    <section class="bouncy-testimonials">
+        <div class="bouncy-testimonials__container">
+            <div class="promo promo_centered">
+                <h2 class="promo__h2">Testimonials</h2>
+                <p class="promo__p">
+                    At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+                </p>
+            </div>
+        </div>
+        <div class="bouncy-testimonials__card">
+            <div class="axialslider">
+                <div class="axialslider__slides">
+                    <div class="axialslider__slide">
+                        <div class="testimonial">
+                            <div class="testimonial__avatar">
+                                <img src="src/images/avatar2.png" alt="">
+                            </div>
+                            <div class="testimonial__content">
+                                <p class="testimonials__p">
+                                    At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia.
+                                </p>
+                                <div class="testimonial__author">Partho</div>
+                                <div class="testimonial__author-position">FOUNDER, ARTWAYS BD</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="axialslider__slide">
+                        <div class="testimonial">
+                            <div class="testimonial__avatar">
+                                <img src="src/images/avatar2.png" alt="">
+                            </div>
+                            <div class="testimonial__content">
+                                <p class="testimonials__p">
+                                    At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia.
+                                </p>
+                                <div class="testimonial__author">Partho</div>
+                                <div class="testimonial__author-position">FOUNDER, ARTWAYS BD</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="axialslider__slide">
+                        <div class="testimonial">
+                            <div class="testimonial__avatar">
+                                <img src="src/images/avatar2.png" alt="">
+                            </div>
+                            <div class="testimonial__content">
+                                <p class="testimonials__p">
+                                    At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia.
+                                </p>
+                                <div class="testimonial__author">Partho</div>
+                                <div class="testimonial__author-position">FOUNDER, ARTWAYS BD</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bouncy-news">
+        <div class="bouncy-news__extended-container">
+            <div class="promo">
+                <h2 class="promo__h2">Latest news</h2>
+                <p class="promo__p">
+                    At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+                </p>
+            </div>
+        </div>
+        <div class="bouncy-news__container">
+            <div class="axialslider axialslider_vertical">
+                <div class="axialslider__slides">
+                    <div class="axialslider__slide">
+                        <div class="news">
+                            <div class="news__header">
+                                The trending Landing Page
+                            </div>
+                            <div class="news__author">
+                                By <strong>Kabir Uddin</strong>
+                            </div>
+                            <div class="news__info">
+                                6950 Likes - 243 Comments - 703 Shares
+                            </div>
+                            <div class="news__text">
+                                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio...
+                            </div>
+                            <a href="#" class="news__link">
+                                <svg width="10px" height="10px">
+                                    <use xlink:href="#plus"></use>
+                                </svg>
+                                Read More
+                            </a>
+                        </div>
+                    </div>
+                    <div class="axialslider__slide">
+                        <div class="news">
+                            <div class="news__header">
+                                The trending Landing Page
+                            </div>
+                            <div class="news__author">
+                                By <strong>Kabir Uddin</strong>
+                            </div>
+                            <div class="news__info">
+                                6950 Likes - 243 Comments - 703 Shares
+                            </div>
+                            <div class="news__text">
+                                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio...
+                            </div>
+                            <a href="#" class="news__link">
+                                <svg width="10px" height="10px">
+                                    <use xlink:href="#plus"></use>
+                                </svg>
+                                Read More
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bouncy-price">
+        <div class="bouncy-price__container">
+            <div class="promo promo_centered">
+                <h2 class="promo__h2">Our price</h2>
+                <p class="promo__p">
+                    At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+                </p>
+            </div>
+            <div class="bouncy-price__prices">
+                <div class="price-card">
+                    <div class="price-card__header">Premium</div>
+                    <div class="price-card__content">
+                        <div class="price-card__price">$ 60</div>
+                        <div class="price-card__period">Per Month</div>
+                    </div>
+                    <div class="price-card__back">
+                        <div class="price-card__back-text">
+                            Full Branding<br />
+                            Project Management<br />
+                            Unlimited Revisions<br />
+                            24/7 h Service<br />
+                            Free Domain<br />
+                            Free Hosting<br />
+                        </div>
+                        <div class="price-card__back-button">
+                            Let`s start
+                            <svg width="10px">
+                                <use xlink:href="#arrow-right"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="price-card">
+                    <div class="price-card__header">Premium</div>
+                    <div class="price-card__content">
+                        <div class="price-card__price">$ 60</div>
+                        <div class="price-card__period">Per Month</div>
+                    </div>
+                    <div class="price-card__back">
+                        <div class="price-card__back-text">
+                            Full Branding<br />
+                            Project Management<br />
+                            Unlimited Revisions<br />
+                            24/7 h Service<br />
+                            Free Domain<br />
+                            Free Hosting<br />
+                        </div>
+                        <div class="price-card__back-button">
+                            Let`s start
+                            <svg width="10px">
+                                <use xlink:href="#arrow-right"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="price-card">
+                    <div class="price-card__header">Exclusive</div>
+                    <div class="price-card__content">
+                        <div class="price-card__price">$ 80</div>
+                        <div class="price-card__period">Per Month</div>
+                    </div>
+                    <div class="price-card__back">
+                        <div class="price-card__back-text">
+                            Full Branding<br />
+                            Project Management<br />
+                            Unlimited Revisions<br />
+                            24/7 h Service<br />
+                            Free Domain<br />
+                            Free Hosting<br />
+                        </div>
+                        <div class="price-card__back-button">
+                            Let`s start
+                            <svg width="10px">
+                                <use xlink:href="#arrow-right"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bouncy-subscribe">
+        <div class="bouncy-subscribe__container">
+            <div class="promo promo_centered promo_dark">
+                <h2 class="promo__h2">Subscribe us</h2>
+                <p class="promo__p">
+                    At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+                </p>
+                <div class="promo__form subscribe-form">
+                    <input type="text" placeholder="Email Address" class="subscribe-form__input">
+                    <button class="subscribe-form__button">Submit</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bouncy-contact-us">
+        <div class="bouncy-contact-us__container">
+            <div class="promo promo_centered">
+                <h2 class="promo__h2">Contact Us</h2>
+                <p class="promo__p">
+                    At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+                </p>
+            </div>
+            <div class="bouncy-contact-us__cards">
+                <div class="contact-us-card">
+                    <div class="contact-us-card__image">
+                        <svg height="30px">
+                            <use xlink:href="#mail"></use>
+                        </svg>
+                    </div>
+                    <div class="contact-us-card__content">
+                        <div class="contact-us-card__name">Email</div>
+                        <div class="contact-us-card__contact">hello@codecafe.com</div>
+                        <div class="contact-us-card__contact">Personal@codecafe.com</div>
+                    </div>
+                </div>
+                <div class="contact-us-card">
+                    <div class="contact-us-card__image">
+                        <svg height="30px">
+                            <use xlink:href="#place"></use>
+                        </svg>
+                    </div>
+                    <div class="contact-us-card__content">
+                        <div class="contact-us-card__name">Our Office</div>
+                        <div class="contact-us-card__contact">240 Bhatikhana, 8200 Barisal Bangladesh</div>
+                    </div>
+                </div>
+                <div class="contact-us-card">
+                    <div class="contact-us-card__image">
+                        <svg height="30px">
+                            <use xlink:href="#phone"></use>
+                        </svg>
+                    </div>
+                    <div class="contact-us-card__content">
+                        <div class="contact-us-card__name">Phone</div>
+                        <a href="tel:+0011669966444" class="contact-us-card__contact">+00 11 66 99 66 444</a>
+                        <a href="tel:+0011996644065" class="contact-us-card__contact">+00 11 99 66 44 065</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bouncy-form">
+        <div class="bouncy-form__inputs">
+            <input type="text" placeholder="Your Name" class="bouncy-form__input" />
+            <input type="text" placeholder="Your Address" class="bouncy-form__input" />
+            <input type="text" placeholder="Subject" class="bouncy-form__input" />
+        </div>
+        <textarea class="bouncy-form__message" rows="10"></textarea>
+        <button class="bouncy-form__button">Submit now</button>
+    </section>
+    <section class="bouncy-maps">
+        <div class="bouncy-maps__content">
+            Место для Yandex Карт
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="logo footer__logo">Bouncy</div>
+        <p class="footer__copyright">Copyright 2015. All rights Reserved</p>
+        <div class="footer__icons">
+            <div class="social-icon" style="background-color: #3b5998;">
+                <svg height="16px">
+                    <use xlink:href="#facebook"></use>
+                </svg>
+            </div>
+            <div class="social-icon" style="background-color: #26a6d1;">
+                <svg height="16px">
+                    <use xlink:href="#twitter"></use>
+                </svg>
+            </div>
+            <div class="social-icon" style="background-color: #0e76a8;">
+                <svg height="16px">
+                    <use xlink:href="#linkedin"></use>
+                </svg>
+            </div>
+            <div class="social-icon" style="background-color: #3f729b;">
+                <svg height="16px">
+                    <use xlink:href="#instagram"></use>
+                </svg>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,522 @@
+@import './offsets.scss';
+@import './colors.scss';
+@import './text.scss';
+@import './mixin.scss';
+
+.button {
+    cursor: pointer;
+    display: inline-block;
+    border: 1px solid $btn-color;
+    color: $btn-color;
+    border-radius: 50px;
+    padding: 10px 30px;
+    font-size: $size_p;
+    text-decoration: none;
+}
+.logo {
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 700;
+}
+.mint-icon {
+    background-color: $base-mint;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu {
+    position: absolute;
+    top: 0px;
+    left: 50px;
+    right: 50px;
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__full-menu {
+        font-size: $size_p;
+        display: flex;
+        & > li {
+            list-style-type: none;
+            & > a {
+                border-radius: 50px;
+                padding: 10px 20px;
+                color: #fff;
+                text-decoration: none;
+                &.active {
+                    border: 1px solid #fff;
+                }
+            }
+        }
+    }
+}
+.promo {
+    text-align: left;
+    &_centered {
+        text-align: center;
+        max-width: 460px;
+        margin: 0 auto;
+    }
+    &_dark {
+        & > .promo__h2 {
+            color: $h3-color;
+        }
+    }
+    &__h2 {
+        font-weight: 300;
+        letter-spacing: 0.2rem;
+        text-transform: uppercase;
+        color: $h2-color;
+    }
+    &__p {
+        margin-top: $base-top-margin;
+        font-size: 1rem;
+    }
+    &__icons {
+        display: flex;
+        justify-content: center;
+        margin-top: $base-top-margin + 0.5rem;
+        & > .mint-icon {
+            margin: 0 13px;
+        }
+    }
+    &__form {
+        margin-top: $base-top-margin;
+    }
+    & > .button {
+        margin-top: $base-top-margin - 0.5rem;
+    }
+}
+.creative-ideas {
+    &__ideas {
+        @include for-tablet {
+            flex-direction: column;
+            & > p:nth-child(2) {
+                margin-top: $base-top-margin;
+                width: 100% !important;
+            }
+        }
+        margin-top: $base-top-margin;
+        display: flex;
+        & > p {
+            &:first-of-type {
+                flex: 1;
+                width: 100%;
+            }
+            &:nth-child(2) {
+                width: 60%;
+            }
+        }
+    }
+}
+.graphic-design {
+    display: flex;
+    &__icons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        & > .mint-icon {
+            margin-top: 1.1rem;
+            background-color: $text-color !important;
+            &:first-of-type {
+                margin-top: 0;
+            }
+            &_active {
+                background-color: $base-mint !important;
+            }
+        }
+    }
+    &__content {
+        padding: 0 $base-top-margin;
+        @include for-phones-landscape {
+            padding: 0 0 0 $base-top-margin !important;
+        }
+    }
+    &__p {
+        margin-top: $base-top-margin;
+        font-size: 1rem !important;
+    }
+}
+.percent-roll {
+    position: relative;
+    &__svg {
+        width: 100%;
+    }
+    &__percent {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.78rem;
+    }
+}
+.section-menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    &__item {
+        padding: 1.42rem;
+        list-style-type: none;
+        color: $h2-color;
+        font-size: 1rem;
+        position: relative;
+        cursor: pointer;
+        &:after {
+            content: '';
+            position: absolute;
+            bottom: 4px;
+            left: 50%;
+            margin-left: -22px;
+            width: 0;
+            height: 2px;
+            background-color: $base-mint;
+            transition: width 300ms;
+        }
+        &_active {
+            &:after {
+                width: 44px;
+            }
+        }
+        &:hover {
+            &:after {
+                width: 44px;
+            }
+        }
+    }
+}
+.bouncy-gallery {
+    column-count: 4;
+    column-gap: 0.5rem;
+    &__item {
+        padding-bottom: 0.4rem;
+        & > img {
+            width: 100%;
+        }
+    }
+}
+.call-to-action {
+    padding: $base-top-margin 0;
+    background-image: url('../images/call-to-action2.png');
+    background-size: cover;
+    background-position: center;
+    color: #FFF;
+    text-align: center;
+    font-size: $h2-color;
+    &__button {
+        margin-top: $base-top-margin - 1rem;
+        border-color: #FFF;
+        color: #FFF;
+    }
+}
+.profile {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    &__avatar {
+        width: 285px;
+        @include for-tablet {
+            text-align: center;
+            width: 100%;
+            & > img {
+                max-width: 100%;
+            }
+        }
+    }
+    &__content {
+        max-width: 370px;
+        margin-top: $base-top-margin;
+        padding-right: $base-top-margin;
+        @include for-tablet {
+            max-width: none;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+    &__base {
+        position: relative;
+        text-align: right;
+        &:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: - $base-top-margin;
+            width: 3px;
+            height: 100%;
+            background-color: $base-mint;
+        }
+    }
+    &__position {
+        margin-top: 0.5rem;
+        text-transform: uppercase;
+        font-weight: 300;
+        font-size: 1rem;
+    }
+    &__description {
+        text-align: right;
+        margin-top: $base-top-margin;
+    }
+    &__skills {
+        margin-top: $base-top-margin;
+        display: grid;
+        grid-row-gap: 2.5rem;
+    }
+}
+.skill {
+    &__content {
+        text-transform: uppercase;
+        font-size: $size_p;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__line {
+        margin-top: 0.5rem;
+        height: 3px;
+        background-color: $h3-color;
+        position: relative;
+    }
+    &__fill {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        background-color: $base-mint;
+    }
+}
+.testimonial {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 $base-top-margin + 1rem;
+    @include for-tablet-portrait {
+        flex-direction: column;
+        padding: 0;
+    }
+    &__avatar {
+        padding: 0 $base-top-margin - 1rem;
+    }
+    &__content {
+        @include for-tablet-portrait {
+            margin-top: $base-top-margin;
+        }
+        padding: 0 $base-top-margin - 1rem;
+    }
+    &__p {
+        font-size: $size_p;
+    }
+    &__author {
+        margin-top: $base-top-margin - 1rem;
+        font-size: $size_p;
+        color: $base-mint;
+        text-transform: uppercase;
+        font-weight: 700;
+        &-position {
+            margin-top: 0.5rem;
+            text-transform: uppercase;
+        }
+    }
+}
+.news {
+    max-width: 600px;
+    &__header {
+        font-size: $size_h2;
+        color: $h3-color;
+    }
+    &__author {
+        margin-top: 1rem;
+        font-size: 1rem;
+        font-style: italic;
+        text-transform: uppercase;
+    }
+    &__info {
+        margin-top: 1rem;
+        color: $btn-color;
+        text-transform: uppercase;
+    }
+    &__text {
+        margin-top: $base-top-margin;
+        font-size: 1rem;
+    }
+    &__link {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        margin-top: $base-top-margin;
+        color: $h3-color;
+        font-size: $size_p;
+        & > svg {
+            margin-right: 0.5rem;
+        }
+    }
+}
+.price-card {
+    height: 300px;
+    width: 230px;
+    background-color: #FFF;
+    position: relative;
+    @include for-tablet-portrait {
+        width: 100%;
+        margin-top: $base-top-margin;
+    }
+    &__header {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        background-color: $base-mint;
+        color: #FFF;
+        font-weight: 700;
+        font-size: $size_h2;
+        padding: $base-top-margin - 1.5rem 0;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    &__content {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    &__price {
+        color: $base-mint;
+        font-size: 3rem;
+        font-weight: 700;
+    }
+    &__period {
+        margin-top: 0.5rem;
+        font-size: $size_h2;
+    }
+    @keyframes behavior {
+        from {
+            transform: translateY(30px);
+            background-color: rgba(255, 255, 255, 0);
+        }
+        to {
+            transform: translateY(0px);
+            background-color: rgba(255, 255, 255, 1);
+        }
+    }
+    &__back {
+        display: none;
+        animation: behavior 300ms;
+        background-color: #FFF;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        &-text {
+            font-size: 1rem;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            flex-direction: column;
+            padding: 2rem 0;
+            line-height: 2rem;
+            height: 100%;
+        }
+        &-button {
+            cursor: pointer;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 0px;
+            background-color: $base-mint;
+            padding: $base-top-margin - 0.5rem 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #FFF;
+            & > svg {
+                transition: all 500ms;
+                margin-left: 0.5rem;
+            }
+            &:hover {
+                & > svg {
+                    margin-left: 1.5rem;
+                }
+            }
+        }
+    }
+    &:hover {
+        & > .price-card__back {
+            display: block !important;
+        }
+    }
+}
+.subscribe-form {
+    display: flex;
+    &__input {
+        box-sizing: border-box;
+        flex: 1;
+        width: 100%;
+        border: 1px solid $h3-color;
+        color: $h3-color;
+        height: 40px;
+        background: none;
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+    }
+    &__button {
+        box-sizing: border-box;
+        font-size: 1rem;
+        text-transform: uppercase;
+        margin-left: 0.5rem;
+        padding: 0.5rem 3rem;
+        height: 40px;
+        background-color: $base-mint;
+        color: #FFF;
+        border: none;
+    }
+}
+.contact-us-card {
+    max-width: 280px;
+    @include for-tablet {
+        max-width: none;
+    }
+    &__image {
+        height: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url('../images/contact-us.png');
+        background-size: cover;
+        background-position: center;
+    }
+    &__content {
+        padding: 1rem 0;
+        background-color: #FFF;
+    }
+    &__name {
+        font-size: $size_p;
+        text-align: center;
+        padding-bottom: 1rem;
+        text-transform: uppercase;
+    }
+    &__contact {
+        margin-top: 0.5rem;
+        display: block;
+        text-decoration: none;
+        color: $h3-color;
+        font-size: 1rem;
+        text-align: center;
+    }
+}
+.social-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+}

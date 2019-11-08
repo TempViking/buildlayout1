@@ -1,0 +1,41 @@
+@import './offsets.scss';
+@import './colors.scss';
+@import './text.scss';
+
+@mixin section {
+    padding: 80px 0;
+    color: $text-color;
+}
+@mixin container {
+    width: 960px;
+    margin: 0px auto;
+    @include for-large-screen {
+        width: auto;
+        padding-left: $base-top-margin;
+        padding-right: $base-top-margin;
+    }
+}
+@mixin extended-container {
+    width: 1150px;
+    margin: 0px auto;
+    @include for-large-screen {
+        width: auto;
+        padding-left: $base-top-margin;
+        padding-right: $base-top-margin;
+    }
+}
+@mixin grey-section {
+    background-color: $base-grey;
+}
+@mixin for-large-screen {
+    @media (max-width: 1150px) { @content; }
+}
+@mixin for-tablet {
+    @media (max-width: 960px) { @content; }
+}
+@mixin for-tablet-portrait {
+    @media (max-width: 760px) { @content; }
+}
+@mixin for-phones-landscape {
+    @media (max-width: 500px) { @content; }
+}
